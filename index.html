@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Cool Calcy App</title>
+        <link rel="icon" type="image/png" href="images.png">
+        <script>
+            function add(){
+                location.replace("add.html");
+            }
+            function sub(){
+                location.replace("sub.html");
+            }
+            function mul(){
+                location.replace("mul.html");
+            }
+            function div(){
+                location.replace("div.html");
+            }
+            function msg(op){
+                document.write(op+" button is clicked !!!");
+            }
+        </script>
+    
+    </head>
+    
+    <body style="background-color: rgb(255, 237, 78);">
+        <h1 style="font-size: 60px;text-align:center">
+            <b>Basic Arithmetic Calculator</b>
+        </h1>
+        <h2 style="font-size: 50px;text-align:center">
+            What do you want to do ?
+        </h2>
+        <p style="text-align: center;">
+            <input style="text-align:center;font-size: 30px;"type="button" value="Addition" onclick="add()">&emsp;
+            <input style="text-align:center;font-size: 30px;"type="button" value="Subtraction" onclick="sub()">&emsp;
+            <input style="text-align:center;font-size: 30px;"type="button" value="Multiplication" onclick="mul()">&emsp; 
+            <input style="text-align:center;font-size: 30px;"type="button" value="Division" onclick="div()"> 
+        </p>
+        
+    </body>
+</html>
+ 

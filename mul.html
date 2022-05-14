@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Cool Calcy App</title>
+        <link rel="icon" type="image/png" href="images.png">
+        <script>
+            function back(){
+                location.replace("index.html");
+            }
+            function multiplication(){
+                var a = document.getElementById('n1').value;
+                var b = document.getElementById('n2').value;
+                a=parseFloat(a);
+                b=parseFloat(b);
+                res=a*b;
+                document.getElementById("mul").innerHTML = "Product = "+res;
+            }
+        </script>
+    
+    </head>
+    
+    <body style="background-color: rgb(88, 112, 131);">
+        <h1 style="font-size: 60px;text-align:center">
+            <b>Multiplication</b>
+        </h1>
+        <h2 style="font-size: 50px;text-align:center">
+            Enter the Numbers you want to Multiply
+        </h2>
+
+        <p style="text-align: center;font-size: 40px;">
+            <input style="font-size:25px" type="number" id="n1" name="n1">&emsp;X&emsp;
+            <input style="font-size:25px" type="number" id="n2" name="n2"><br><br>
+            <input style="font-size:25px;"type="button" value="Enter" onclick="multiplication()"><br><br>
+            <div style="font-size:40px;text-align: center;" id="mul"></div>
+        </p>
+
+        <br><br><br>
+        <p style="text-align: center;">
+            <input style="text-align:center;font-size: 30px;"type="button" value="Back to Homepage" onclick="back()">
+        </p>
+
+    </body>
+</html>
+ 
